@@ -7,8 +7,12 @@ cardContainer.addEventListener("click", function (e) {
     const updatedHeart = Number(totalHeart) + 1;
     document.getElementById("total-heart").innerText = updatedHeart;
   }
-  // Service Name & Service Number Alert
+
   const callBtn = e.target.closest(".call-btn");
+  const serviceName =
+    callBtn.parentNode.parentNode.children[1].children[0].innerText;
+  const serviceNumber =
+    callBtn.parentNode.parentNode.children[1].children[2].innerText;
   if (callBtn) {
     const totalCoin = document.getElementById("total-coin").innerText;
     const totalCoinNumber = Number(totalCoin);
@@ -20,10 +24,7 @@ cardContainer.addEventListener("click", function (e) {
       return;
     }
     document.getElementById("total-coin").innerText = NetCoinNumber;
-    const serviceName =
-      callBtn.parentNode.parentNode.children[1].children[0].innerText;
-    const serviceNumber =
-      callBtn.parentNode.parentNode.children[1].children[2].innerText;
+
     alert(`📞Calling ${serviceName} ${serviceNumber}`);
   }
 
@@ -31,18 +32,13 @@ cardContainer.addEventListener("click", function (e) {
   const callHistoryContainer = document.getElementById(
     "call-history-container"
   );
-  console.log(callHistoryContainer);
-  const serviceName =
-    callBtn.parentNode.parentNode.children[1].children[0].innerText;
-  const serviceNumber =
-    callBtn.parentNode.parentNode.children[1].children[2].innerText;
-  console.log(date);
+
   const newHistory = document.createElement("div");
   newHistory.innerHTML = `
           <div class="flex items-center justify-between ">
           <div  class="space-y-2">
-            <p>${serviceName}</p>
-            <p>${serviceNumber}</p>            
+          <p> ${serviceName} </p>
+          <p> ${serviceNumber} </p>
           </div>
           <div>${new Date().toLocaleTimeString()}</div>
         </div>
@@ -52,5 +48,13 @@ cardContainer.addEventListener("click", function (e) {
   clearBtn.addEventListener("click", function () {
     newHistory.innerHTML = "";
   });
+  // Card Copy Icon Functionality
 });
-console.log("Live");
+const copyBtns = document.getElementsByClassName("copy-btn");
+for (const copyBtn of copyBtns) {
+  copyBtn.addEventListener("click", function () {
+    const totalCopy = document.getElementById("total-copy").innerText;
+    const updatedCopy = Number(totalCopy) + 1;
+    document.getElementById("total-copy").innerText = updatedCopy;
+  });
+}
