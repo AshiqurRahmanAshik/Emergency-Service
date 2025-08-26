@@ -21,7 +21,7 @@
     />
   </head>
   <body>
-    <header class="my-5">
+    <header class="my-10">
       <nav class="flex justify-between mx-10">
         <div class="flex gap-2">
           <img class="w-14" src="./assets/logo.png" alt="" />
@@ -30,20 +30,275 @@
           </p>
         </div>
         <div class="space-x-2 font-bold flex">
-          <button class="bg-green-100 block w-24 rounded-2xl">
+          <button
+            class="bg-green-50 flex justify-center items-center gap-2 w-32 rounded-2xl"
+          >
             <span>0</span>
-            <i class="fa-solid fa-heart"></i>
+            <img class="w-6" src="./assets/heart.png" alt="" />
           </button>
-          <button class="bg-green-100 block w-24 rounded-2xl">
+          <button
+            class="bg-green-50 flex justify-center items-center gap-2 w-32 rounded-2xl"
+          >
             <span>100</span>
-            <i class="fa-solid fa-star"></i>
+            <img class="w-6" src="./assets/coin.png" alt="" />
           </button>
-          <button class="bg-green-600 block w-24 rounded-2xl text-white">
-            2 Copy
+          <button
+            class="bg-green-600 flex justify-center items-center gap-2 w-32 rounded-2xl text-white"
+          >
+            <span>2 Copy</span>
           </button>
         </div>
       </nav>
+      <section
+        class="bg-gradient-to-r from-green-900 via-green-800 to-green-900 space-y-2 my-3"
+      >
+        <img class="w-14 mx-auto pt-2" src="./assets/logo-dark.png" alt="" />
+        <div class="text-white text-center py-2 space-y-1">
+          <p class="font-bold text-3xl">Emergency Service Directory</p>
+          <p class="font-semibold">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main class="flex px-5 gap-5 bg-green-50">
+      <section class="w-[75%] grid grid-cols-3 gap-10">
+        <!-- service card 1 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/emergency.png"
+              alt="emergency icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">National Emergency Number</p>
+            <p class="">National Emergency</p>
+            <p class="font-bold mt-2 text-xl">999</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">All</button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 2 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-blue-100 rounded-xl p-1"
+              src="./assets/police.png"
+              alt="police icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Police Helpline Number</p>
+            <p class="">National Emergency</p>
+            <p class="font-bold mt-2 text-xl">999</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">
+              Police
+            </button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 3 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/fire-service.png"
+              alt="fire service icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Fire Service Number</p>
+            <p class="">Fire Service</p>
+            <p class="font-bold mt-2 text-xl">999</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">Fire</button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 4 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/ambulance.png"
+              alt="ambulance icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Ambulance Service</p>
+            <p class="">Ambulance</p>
+            <p class="font-bold mt-2 text-xl">1994-999999</p>
+            <button class="bg-gray-100 rounded px-1 mt-1 mb-2">Health</button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 5 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/emergency.png"
+              alt="emergency icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Women & Child Helpline</p>
+            <p class="">Women & Child Helpline</p>
+            <p class="font-bold mt-2 text-xl">109</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">Help</button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 6 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/emergency.png"
+              alt="emergency icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Anti-Corruption Helpline</p>
+            <p class="">Anti-Corruption</p>
+            <p class="font-bold mt-2 text-xl">106</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">Govt.</button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 7 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/emergency.png"
+              alt="emergency icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Electricity Helpline</p>
+            <p class="">Electricity Outage</p>
+            <p class="font-bold mt-2 text-xl">16216</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">
+              Electricity
+            </button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 8 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/emergency.png"
+              alt="emergency icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Brac Helpline</p>
+            <p class="">Brac</p>
+            <p class="font-bold mt-2 text-xl">16445</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">NGO</button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+        <!-- service card 9 -->
+        <div class="shadow-sm rounded-xl p-5 space-y-1 bg-white">
+          <div class="flex items-center justify-between">
+            <img
+              class="w-10 bg-red-100 rounded-xl p-1"
+              src="./assets/emergency.png"
+              alt="emergency icon"
+            />
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div>
+            <p class="font-bold">Bangladesh Railway Helpline</p>
+            <p class="">Bangladesh Railway</p>
+            <p class="font-bold mt-2 text-xl">163</p>
+            <button class="bg-gray-100 rounded-xl px-3 mt-1 mb-2">
+              Travel
+            </button>
+          </div>
+          <div class="flex justify-between gap-2">
+            <button class="w-full border border-gray-200 rounded">
+              <i class="mx-1 fa-solid fa-copy"></i><span>Copy</span>
+            </button>
+            <button class="w-full bg-green-500 text-white rounded">
+              <i class="mx-1 fa-solid fa-phone"></i><span>Call</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- call history -->
+      <section class="w-[25%] bg-yellow-200">call history</section>
+    </main>
   </body>
 </html>
