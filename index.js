@@ -1,3 +1,4 @@
+const date = new Date().toLocaleTimeString();
 const cardContainer = document.getElementById("card-container");
 cardContainer.addEventListener("click", function (e) {
   // Card Heart Icon Functionalities
@@ -12,7 +13,7 @@ cardContainer.addEventListener("click", function (e) {
     const totalCoin = document.getElementById("total-coin").innerText;
     const totalCoinNumber = Number(totalCoin);
     const NetCoinNumber = totalCoinNumber - 20;
-    if (NetCoinNumber < 0) {
+    if (totalCoinNumber < 20) {
       alert(
         `❌ You don't have sufficient coin. You need at least 20 coins to call `
       );
@@ -25,5 +26,31 @@ cardContainer.addEventListener("click", function (e) {
       callBtn.parentNode.parentNode.children[1].children[2].innerText;
     alert(`📞Calling ${serviceName} ${serviceNumber}`);
   }
+
+  // Call History Append
+  const callHistoryContainer = document.getElementById(
+    "call-history-container"
+  );
+  console.log(callHistoryContainer);
+  const serviceName =
+    callBtn.parentNode.parentNode.children[1].children[0].innerText;
+  const serviceNumber =
+    callBtn.parentNode.parentNode.children[1].children[2].innerText;
+  console.log(date);
+  const newHistory = document.createElement("div");
+  newHistory.innerHTML = `
+          <div class="flex items-center justify-between ">
+          <div  class="space-y-2">
+            <p>${serviceName}</p>
+            <p>${serviceNumber}</p>            
+          </div>
+          <div>${new Date().toLocaleTimeString()}</div>
+        </div>
+  `;
+  callHistoryContainer.append(newHistory);
+  const clearBtn = document.getElementById("clear-btn");
+  clearBtn.addEventListener("click", function () {
+    newHistory.innerHTML = "";
+  });
 });
 console.log("Live");
