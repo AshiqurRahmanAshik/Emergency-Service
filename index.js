@@ -9,6 +9,16 @@ cardContainer.addEventListener("click", function (e) {
   // Service Name & Service Number Alert
   const callBtn = e.target.closest(".call-btn");
   if (callBtn) {
+    const totalCoin = document.getElementById("total-coin").innerText;
+    const totalCoinNumber = Number(totalCoin);
+    const NetCoinNumber = totalCoinNumber - 20;
+    if (NetCoinNumber < 0) {
+      alert(
+        `❌ You don't have sufficient coin. You need at least 20 coins to call `
+      );
+      return;
+    }
+    document.getElementById("total-coin").innerText = NetCoinNumber;
     const serviceName =
       callBtn.parentNode.parentNode.children[1].children[0].innerText;
     const serviceNumber =
