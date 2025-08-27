@@ -37,7 +37,7 @@ cardContainer.addEventListener("click", function (e) {
     const newHistory = document.createElement("div");
     newHistory.innerHTML = `
       <div class="flex items-center justify-between">
-        <div class="space-y-2">
+        <div class="space-y-2 my-2">
           <p class="font-bold">${serviceName}</p>
           <p>${serviceNumber}</p>
         </div>
