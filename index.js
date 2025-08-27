@@ -39,9 +39,9 @@ cardContainer.addEventListener("click", function (e) {
       <div class="flex items-center justify-between">
         <div class="space-y-2 my-2">
           <p class="font-bold">${serviceName}</p>
-          <p>${serviceNumber}</p>
+          <p class="roboto">${serviceNumber}</p>
         </div>
-        <div>${new Date().toLocaleTimeString()}</div>
+        <div class="text-sm text-gray-700">${new Date().toLocaleTimeString()}</div>
       </div>
     `;
     callHistoryContainer.append(newHistory);
