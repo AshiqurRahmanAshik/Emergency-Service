@@ -69,6 +69,6 @@ Steps:
   - Example: Prevents a form from submitting or a link from navigating to its URL.
 
 - **`stopPropagation()`**
-- Stops the event from bubbling up to parent elements.
+  - Stops the event from bubbling up to parent elements.
 
 ---
